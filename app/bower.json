@@ -1,0 +1,32 @@
+{
+  "name": "Base Frontend Ember",
+  "private": true,
+  "dependencies": {
+    "foundation": "~5.2.x",
+    "ember": "~1.5",
+    "ember-data": "~1.0.0-beta.4"
+  },
+  "version": "0.0.1",
+  "homepage": "https://github.com/cquin22/Base-Aplicaciones-Frontend-Con-Ember",
+  "description": "Este es un repositorio base para aplicaciones Front End con ember y foundation 5 como framework en esta base encontraras codigo listo y organizado para un modelo MVC. Esta enlazado con stylus y nib como pre porcesador css",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "Ember",
+    "Javascript",
+    "Stylus",
+    "Foundation"
+  ],
+  "authors": [
+    "cristianqr22@gmail.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
