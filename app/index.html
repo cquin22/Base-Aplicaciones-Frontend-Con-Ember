@@ -5,21 +5,35 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>ppScort</title>
+        <title>Aplicación Base Para Desarrollo Front End Con Ember.js</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="/favicon.ico">
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/foundation.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/foundation.css">
         <!-- endbuild -->
     </head>
-    <body>
+    <body >
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         
+        <script type="text/x-handlebars">
+        <div class="bg" >
+          <h2>App de Base con ember.js</h2>
 
+            {{outlet}}
+        </div>    
+        </script>
+
+        <script type="text/x-handlebars" id="index">
+            <ul>
+            {{#each item in model}}
+              <li>{{item}}</li>
+            {{/each}}
+            </ul>
+        </script>          
 
 
 
@@ -32,10 +46,15 @@
 
 
         <!--Dependencias-->
-        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/handlebars/handlebars.js"></script>
+        <script src="bower_components/ember/ember.js"></script>
+        <script src="bower_components/ember-data/ember-data.js"></script>    
+        <script src="bower_components/foundation/js/foundation.js"></script>
+        <script src="bower_components/modernizr/modernizr.js"></script>
 
         <!--Javascripts de la Aplicacion-->
-        <script src="scripts/main.js"></script>
+        <script src="js/main.js"></script>
 
 </body>
 </html>
